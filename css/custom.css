@@ -1,0 +1,2984 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* GLOBAL STYLES
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+
+
+Thin 100
+Thin 100 italic
+Extra-light 200
+Extra-light 200 italic
+Light 300
+Light 300 italic
+Regular 400
+Regular 400 italic
+Medium 500
+Medium 500 italic
+Semi-bold 600
+Semi-bold 600 italic
+Bold 700
+Extra-bold 800
+Extra-bold 800 italic
+Black 900
+Black 900 italic
+
+-------------------------------------------------- */  
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+ 
+
+@font-face {
+  font-family: 'All the Way to the Sun';
+  src: url('../fonts/AlltheWaytotheSun.eot');
+  src: url('../fonts/AlltheWaytotheSun.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AlltheWaytotheSun.woff2') format('woff2'),
+      url('../fonts/AlltheWaytotheSun.woff') format('woff'),
+      url('../fonts/AlltheWaytotheSun.ttf') format('truetype'),
+      url('../fonts/AlltheWaytotheSun.svg#AlltheWaytotheSun') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+/******$i$*******Global css start*******$i$*********/
+
+body{
+    font-size: 16px;
+    font-family: var(--fontfamily-primary);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+:root {
+  	--fontfamily-primary:  'Montserrat', sans-serif ; 
+    --fontfamily-secondary: 'All the Way to the Sun'; 
+    --fontfamily-tertiary: 'Montserrat Alternates', sans-serif; 
+ 
+ 
+  --darkbalck-color: #3d435b;
+  --orange-color: #ff7e01; 
+  --blue-color: #016cff;;  
+  --cyan-color:#0fe4ff;
+  --yellow-color: #ffad02;
+  --white-color: #fff;
+  --darkblue-color: #092c74;
+  --lightblue-color: #EDF4FF; 
+  }
+
+  a:hover {
+    color: currentColor;
+}
+ 
+
+.primary-color{color: var(--darkbalck-color);} 
+.orange-color{color: var(--orange-color);} 
+.blue-color{color:var(--blue-color);} 
+.cyan-color{color: var(--cyan-color);} 
+.yellow-color{color:var(--yellow-color);} 
+.white-color{color:var(--white-color);} 
+.darkblue-color{color:var(--darkblue-color);}
+
+ 
+img.img-resposive{
+  max-width: 100%;
+}
+ 
+
+
+/******$i$*******Global css end*******$i$*********/
+
+/******$i$*******header css start*******$i$*********/
+
+.header-wrap {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.header-left { 
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding-right: 49px;
+}
+
+.bg-header{position: relative; z-index: 2;} 
+
+.bg-header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--lightblue-color);
+  border: 1px solid rgba(245, 249, 252, 0.7);
+  box-shadow: -7px -7px 10px rgb(255 255 255 / 80%);
+  width: 100%;
+  height: 80px;
+  z-index: -1; 
+} 
+
+.logo-box {
+  margin-bottom: -40px;
+  position: relative;
+}
+
+.powerlogo-box {
+  display: flex;
+  align-items: center;
+  padding-left: 44px;
+  margin-right: 63px;
+  margin-top: 10px;
+}
+
+.powerlogo-txt {
+  display: flex;
+  flex-direction: column;
+  margin-left: -5px;
+  margin-top: -9px;
+}
+
+.powerlogo-txt span{  
+font-weight: 500;
+font-size: 14px;
+text-align: left;
+color: #3d435b;
+}
+
+.powerlogo-txt strong{ 
+font-family: Montserrat;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: left;
+color: #3c3c3c;
+}
+
+
+
+.btn{ 
+  transition: all .25s ease-in-out;
+  background-color: transparent;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+}
+
+.buy-btn,
+.play-btn,
+.connect-btn,
+.buy-btn-sm, 
+.connect-btn-sm,
+.ownyourland-btn{ 
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 11px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  align-self: center;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 2px;
+} 
+
+
+.buy-btn{
+  background-image: url(../images/buy_btn.png);
+  width: 170px;
+  height: 59px;
+  margin-right: 35px;
+} 
+ 
+.play-btn{
+  background-image: url(../images/play.png);
+  width: 239px;
+  height: 59px;
+} 
+
+.connect-btn{
+  background-image: url(../images/connect_btn.png); 
+  width: 170px;
+  height: 59px; 
+  margin-left: 20px;
+} 
+
+.onoff-box{
+  background-image: url(../images/onoff.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 101px;
+  height: 100px;
+  margin-left: 1px;
+  margin-bottom: -22px;
+}
+
+.Whitelisted {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #3d435b;
+}
+
+.header-mob {
+  background-color: #f5c579;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.header-mob .powerlogo-box .img-resposive {
+  width: 44px;
+}
+
+
+.logo-box img {
+  width: 100%;
+  max-width: 320px;
+}
+
+ 
+
+/******$i$*******header css end*******$i$*********/
+
+/******$i$*******menu css start*******$i$*********/
+.menu-con {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 84px;
+  z-index: -1;
+  width: 100%;
+  background: rgba(245, 249, 252, 0.86);
+  border: 1px solid rgba(162, 162, 162, 0.69);
+  filter: drop-shadow(-7px -7px 10px rgba(165, 165, 165, 0.8));
+  transition: width 2s;
+}
+
+.menu-btn-box {
+  padding: 40px 13px 0 10px;
+}
+
+.buy-btn-sm{
+  background-image: url(../images/buynow-menu.png);
+  width: 149px;
+  height: 43px;
+  font-size: 17px;
+} 
+
+.connect-btn-sm{
+  background-image: url(../images/discount-btn.png);
+  width: 132px;
+  height: 43px;
+  font-size: 17px;
+  margin-left: 9px;x;
+} 
+
+.menu-secore-box {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #3d435b;
+  margin: 15px 0 0;
+  padding: 0 10px;
+}
+
+.menu-secore-box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-secore-box ul li.sprater{
+  height: 1px;
+  background-color:  #8a97ad; 
+}
+
+.menu-secore-box ul li{ 
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5px;
+} 
+
+.menu-secore-box ul li span, .menu-secore-box ul li strong {
+  width: 50%;
+}
+ 
+.menu-nav-box {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #24272d;
+  margin: 35px 0 0;
+}
+
+.menu-nav-box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap
+}
+ 
+
+.menu-nav-box ul li{  
+  width: 50%;
+  margin-bottom: 30px;
+  list-style: none;
+} 
+
+.menu-nav-box ul li a{ 
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  flex-direction: column;
+} 
+
+.menu-nav-box ul li a i {
+  margin-bottom: 3px;
+  display: block;
+}
+
+.menu-nav-box ul li a span {
+  font-weight: normal;
+  color: #7b7b7b;
+  display: block;
+}
+
+.menu-share-box {
+  background-image: url(../images/menushare-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: left top;
+  padding: 30px 20px 15px 20px;
+}
+
+.menu-sharesecore {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #e8e8e8;
+  display: flex;
+  gap: 2px;
+  align-items: center; 
+}
+
+.menu-sharesecore:first-child { 
+  margin-bottom: 27px;
+}
+
+.sharesecore-text {
+  display: flex;
+  width: 100%;
+  margin: 4px 0 0;
+}
+
+.sharesecore-text strong {
+  width: 78px;
+}
+
+.menu-sharemedia {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #e8e8e8;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 16px 0 2px 19px;
+  width: 100%;
+}
+
+.sharesecore-text span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu-con.menus-small {
+  background: transparent;
+  border: none;
+  filter: none;
+  width: 107px;
+}
+
+.menu-con.menus-small .menu-btn-box,
+.menu-con.menus-small .menu-secore-box, 
+.menu-con.menus-small .menu-nav-box ul li a span,
+.menu-con.menus-small .menu-sharemedia,
+.menu-con.menus-small .sharesecore-head{
+  display: none;
+}
+
+ 
+.menu-con.menus-small .menu-nav-box ul li a strong{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  color: #24272d;
+}
+
+.menu-nav-box ul li a i img.img-resposive {
+  width: 61px;
+}
+
+.menu-con.menus-small .menu-nav-box ul li {
+  width: 100%; 
+}
+
+.menu-con.menus-small .menu-sharesecore { 
+  flex-direction: column;
+}
+
+.menu-con.menus-small .sharesecore-text { 
+  flex-direction: column;
+  text-align: center;
+  margin: -2px 0 0;
+}
+
+
+.menu-con.menus-small .menu-share-box {
+  background-image: url(../images/menushare-bg-small.png);
+  margin-top: 30px;
+}
+
+.menu-con.menus-small .menu-nav-box { 
+  margin: 50px 0 0;
+}
+
+.menu-con.menus-small .menu-nav-box ul li a i {
+  margin-bottom: 6px; 
+}
+
+.menu-con.menus-small .menu-nav-box ul li { 
+  margin-bottom: 20px; 
+}
+
+.menu-con.menus-small .menu-sharesecore { 
+  font-size: 14px; 
+}
+
+.menu-con.menus-small .menu-sharesecore:first-child {
+  margin-bottom: 33px;
+}
+
+/******$i$*******menu css start*******$i$*********/ 
+/******$i$*******index css start*******$i$*********/
+
+.banner-wrap{ 
+  padding-left: 100px; 
+  overflow: hidden;
+}
+
+.banner-con {
+  background-image: url(../images/bg-banner.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 106% auto;
+  width: calc(100% + (50px));
+  min-height: 100vh;
+  margin-left: 0px;
+  margin-top: -25px;
+  background-attachment: fixed; 
+}
+
+.slider-wrap {
+  padding-left: 74px;
+  padding-right: 68px;
+  padding-top: 24px;
+}
+
+.slider-con {
+  padding: 55px 10px 26px;
+  overflow: hidden;
+}
+
+.tiles-box{
+  width: 100%;
+  height: 289px;
+  border-radius: 48px;
+  overflow: hidden;
+  background: #8797af;;
+  border: 1px solid rgba(245, 249, 252, 0.7);
+  box-shadow: 5px 5px 10px rgba(191, 191, 191, 0.8);
+}
+
+.tiles-box-dark{ 
+  background:#3d435b;
+ 
+}
+
+
+.owl-carousel-style-01.owl-carousel {   
+}
+
+.owl-carousel-style-01.owl-carousel .owl-stage-outer {  
+  overflow: visible;
+} 
+
+.owl-carousel-style-01 .owl-dots {
+  text-align: center;
+  margin-top: 34px;
+}
+
+.owl-carousel-style-01.owl-carousel button.owl-dot{
+  width: 22.26px;
+  height: 22.26px;
+  background: #f3f3f3;
+  border: 2px solid #ced0d6;
+  border-radius: 100%;
+  margin:0 13px;
+}
+
+.owl-carousel-style-01.owl-carousel button.owl-dot.active{
+  background: #3d435b;
+  border: 2px solid #707070;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.16));
+}
+ 
+.banner-txt-box {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3d435b;
+  text-align: center;
+}
+
+.banner-txt-img {
+  margin: 0 0 10px;
+}
+
+.landpower-box {
+  width: 100%;
+  max-width: 620px;
+  margin: 80px auto 0;
+}
+
+.landpower-txt{
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  text-align: left;
+  color: #3d435b;
+  padding-left: 107px;
+  margin: 0 0 -30px;
+}
+
+.landpower-txt strong{ 
+  font-weight: normal;
+  font-size: 58px;
+  letter-spacing: 0.02em;
+  line-height: 34px;
+  text-align: left;
+  padding: 0 20px;
+  color: #00247a;
+}
+
+.landpower-proglogo-box {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+ 
+ 
+.landpower-logo {
+    position: relative;
+    z-index: 1;
+}
+
+.landpower-prog {
+  background-image: url(../images/progressbar.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  padding: 13px 13px 13px 15px;
+  width: 514px;
+  height: 66px;
+  margin: 0 0 12px -26px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+
+}
+
+.ownyourland-wrap {
+  margin-top: 25px;
+  position: relative;
+}
+
+.ownyourland-wrap::after {
+  content: "";
+  margin-top: 25px;
+  background: #eaeef5;
+  filter: drop-shadow(5px 5px 10px rgba(166, 171, 189, 0.67));
+  position: absolute;
+  top: 18%;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+}
+
+
+.ownyourland-con {
+  display: flex;
+  justify-content: center;
+}
+
+.attributeSize-box {
+  background-image: url(../images/attributeSize.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 404px;
+  height: 218px;
+  text-align: center;
+  margin: 148px 15px 0;
+}
+
+.attributeSize-heading{
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 22px 67px 0;
+}
+
+.attributeslider-box {
+  width: 100%;
+  text-align: center;
+  max-width: 303px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.attributeSize-slider {
+  width: 100%;
+  text-align: center;
+  max-width: 200px;
+  margin: 25px auto;
+  position: relative;
+}
+ 
+.attributeslider-img{
+  text-align: center;
+}
+.attributeslider-txt{ 
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 50px;
+  color: #00247a; 
+}
+
+.attributeslider-img img.img-resposive {
+  display: inline-block;
+  max-width: 60px;
+}
+
+.owl-carousel-land {
+
+}
+
+.owl-carousel-land .owl-nav {
+  position: absolute;
+  top: 8%;
+  width: 152%;
+  left: -26%;
+}
+
+.owl-carousel-land.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel-land.owl-carousel .owl-nav button.owl-next{
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 54px;
+  height: 54px;
+}
+
+.owl-carousel-land.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel-land.owl-carousel .owl-nav button.owl-next span{
+  visibility: hidden;
+}
+
+
+.owl-carousel-land.owl-carousel .owl-nav button.owl-prev{
+  background-image: url(../images/left_arrow.png);
+  float: left;
+}
+
+.owl-carousel-land.owl-carousel .owl-nav button.owl-next{
+  background-image: url(../images/right_arrow.png);
+  float: right;
+}
+
+
+.minmax-slider {
+  width: 100%;
+  text-align: center;
+  max-width: 200px;
+  margin: 25px auto;
+  position: relative;
+}
+ 
+.minmax-textimg{
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  line-height: 17px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minmax-box {
+  margin: 17px 0 0;
+  text-align: center;
+}
+
+.minmax-textimg img{ 
+  width: 56px !important;
+  display: inline-block !important;
+  margin: 0 12px;
+  margin-bottom: 10px;
+}
+
+.minmax-txt{ 
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: 0.02em;
+  line-height: 69px;
+  text-align: left;
+  color: #00247a;
+  display: inline-flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  max-width: 324px;
+}
+
+.landsizes-btn{
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+.landsizes-btn-min{
+  background-image: url(../images/minus.png);
+  float: left;
+}
+
+.landsizes-btn-plus{
+  background-image: url(../images/plus.png);
+  float: right;
+}
+
+.minmax-txt span {
+  text-align: center;
+  width: 216px;
+}
+ 
+.ownyourland-btn {
+  background-image: url(../images/ownyourland.png);
+  width: 406.76px;
+  height: 111.37px; 
+  font-weight: bold;
+  font-size: 42px;
+  letter-spacing: 0.03em;
+  line-height: 17px;
+}
+
+.ownyourland-con {
+  margin: 10px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.landdetail-con {
+  display: flex;
+  padding: 0 65px;
+  margin-top: -23px;
+  position: relative;
+  z-index: 2;
+}
+
+
+ 
+
+.landdetailLeft-box {
+  width: 45.2%;
+}
+
+.landdetailRight-box {  
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 56px;
+  text-align: left;
+  color: #3d435b;
+  padding-left: 0;
+  padding-top: 139px;
+  width: 54.8%;
+}
+
+.mleft-100{
+  margin-left: 100px;
+}
+
+
+.fightfor-wrap { 
+  position: relative;
+  background-image: url(../images/fightfor_bg.png);
+  background-repeat: no-repeat;
+  background-position: -56px -189px;
+  background-size: 106%;
+  z-index: 2;
+}
+  
+.fightfor-con { 
+}
+
+.fightfor-heading{ 
+  font-family: var(--fontfamily-secondary);
+  font-size: 31px;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  width: 431px;
+  height: 26px;
+  margin-left: 323px;
+}
+
+.fightfor-heading:after{
+  content: "";
+  background-image: url(../images/fightfor_heading_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: absolute;
+  width: 427px;
+  height: 180px;
+  top: -91px;
+  left: -13px;
+  z-index: -1;
+}
+
+.fightfor-box {
+  margin-right: 135px;
+}
+ 
+.fightfor-topbox {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 173px;
+  padding-right: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.fightfor-textbox { 
+  max-width: 926px;
+  width: 100%;
+  margin-top: -125px;
+  margin-left: 154px;
+}
+
+.fightfor-textheading {
+  background-image: url(../images/fightland_head_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 337px;
+  height: 172px;
+  text-align: center;
+  margin-left: 110px;
+  padding-top: 13px;
+}
+
+.fightfor-text {
+  background-image: url(../images/fightland_text_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: 79px 74px 79px 99px;
+  font-weight: 500;
+  font-size: 26px;
+  text-align: left;
+  color: #fff;
+  margin-top: -79px;
+}
+
+.landelement-wrap {
+  background: #eaeef5;
+  filter: drop-shadow(5px 5px 10px rgba(166, 171, 189, 0.67));
+  margin-top: -102px;
+  position: relative;
+  padding-top: 37px;
+  padding-left: 91px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 100px;
+}
+  
+.landelement-con { 
+}
+
+.landelement-textheading {
+  background-image: url(../images/landelements_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 302px;
+  height: 151px;
+  font-family: var(--fontfamily-secondary);
+  margin-right: 137px;
+  padding-top: 20px;
+  font-weight: normal;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  line-height: 56px;
+}
+
+.landelement-text{
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left;
+  color: #3d435b;
+}
+
+.landelement-left {
+  width: 63%;
+}
+
+.landelement-textbox {
+  padding-left: 138px;
+  padding-right: 20px;
+  padding-top: 45px;
+  width: 55%;
+}
+
+.landelement-con {
+  display: flex;
+}
+
+.SupportingAgainst-con {
+  display: flex;
+  margin: 27px 0 0;
+  padding: 0;
+}
+
+.col-half-box {
+  width: 50%;
+}
+
+.SupportingAgainst-box {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+span.SA-text {
+  padding-top: 0px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 56px;
+  text-align: center;
+  color: #7b7b7b;
+}
+
+.col-half-box:last-child span.SA-text {
+  min-width: 120px;
+}
+
+.howitswork-wrap {
+  background: linear-gradient(#f5c679 15.14%, #fbdfb1 43.24%, #fadeae 67.04%, #f9daa7 78.79%, #f8d49a 87.9%, #f6cc87 95.6%, #f5c679 100%);
+  padding: 100px 55px 0px 107px;
+}
+  
+.howitswork-con{
+  display: flex; 
+}
+
+.howitswork-detail{
+  width: 100%;
+  max-width: 490px;
+  margin-top: 103px;
+}
+.howitswork-heading{
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/howitswork_heading.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  font-weight: normal;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  line-height: 105px;
+  text-align: center;
+  color: #fff;
+  width: 409px;
+  height: 105px;
+  margin: 0 auto;
+  padding-left: 7px;
+  position: relative;
+}
+
+.howitswork-text{ 
+  background-image: url(../images/howitswork_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 63px 36px 55px 56px;
+  margin-top: -38px;
+
+}
+
+.howitswork-box{
+  max-width: 256px;
+  width: 100%;
+}
+
+.howitswork-head {
+  background-image: url(../images/step_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 225px;
+  font-size: 32px;
+  line-height: 28px;
+  text-align: center;
+  color: #3d435b;
+  display: flex;
+  flex-direction: column;
+  height: 162px;
+  font-family: var(--fontfamily-secondary);
+  margin: 0 auto;
+}
+
+.howitswork-head span {
+  margin-top: 10px;
+  min-height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.howitswork-head strong {
+  margin-top: -6px;
+}
+
+.howitswork-left {
+  width: 39%;
+}
+ 
+.howitswork-txt {
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+  color: #3c3c3c;
+  padding: 38px 0px;
+  line-height: 32px;
+}
+
+.howitswork-right {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-three {
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+
+.gameeconomics-wrap {
+  background: #3d435b;
+  filter: drop-shadow(5px 5px 10px #a6abbd);
+}
+  
+.gameeconomics-con{
+  display: flex; 
+}
+
+.gameeconomics-left {
+  width: 36%;
+  padding: 10px 0 0;
+  margin-bottom: -140px;
+}
+
+.gameeconomics-right {
+  width: 64%;
+  padding-top: 50px;
+}
+
+.gameeconomics-heading {
+  margin: 0 0 38px;
+}
+
+.gameeconomics-boxhead {
+  font-size: 48px;
+  color: #fff;
+  font-family: var(--fontfamily-secondary);
+}
+
+.gameeconomics-boxhead span {
+  margin-right: 30px;
+  min-width: 112px;
+  display: inline-block;
+}
+
+.gameeconomics-boxhead strong {
+  font-size: 52px;
+  margin-left: 55px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
+  font-weight: normal;
+}
+
+.ul-style-01{
+  margin: 0;
+  padding: 0;
+}
+
+.ul-style-01 li{
+  background-image: url(../images/list_bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left;
+  color: #fff;
+  padding-left: 32px;
+  margin-bottom: 3px;
+}
+
+.list-box {
+  margin: 20px 0 10px;
+}
+
+.gameeconomics-text { 
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left;
+  color: #fff;
+  margin: 15px 0 0;
+  max-width: 85%;
+}
+
+.partners-wrap {
+background: linear-gradient(#f5c679 15.14%, #fbdfb1 43.24%, #fadeae 67.04%, #f9daa7 78.79%, #f8d49a 87.9%, #f6cc87 95.6%, #f5c679 100%);
+background-image: url(../images/partner_bg.png);
+background-repeat: no-repeat;
+background-position: top center;
+background-size: cover;
+}
+
+.partners-box{ 
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 200px;
+  font-size: 32px;
+  line-height: 28px;
+  text-align: center;
+  color: #3d435b;
+  flex-direction: column;
+  height: 173px;
+  font-family: var(--fontfamily-secondary);
+  margin: 0 53px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.partners-box.green-bg{background-image: url(../images/partner_01.png); }
+
+.partners-box.blue-bg{background-image: url(../images/partner_02.png); }
+
+.partners-box span {
+  margin-top: 10px;
+  min-height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-box strong {
+  margin-top: -6px;
+}
+
+.partners-heading {
+  font-size: 80px;
+  text-align: center;
+  color: #273050;
+  font-family: var(--fontfamily-secondary);
+  padding: 73px 0 0 0;
+}   
+
+.partners-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 52px;
+  margin-top: 78px;
+}
+
+.teams-con {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 93px;
+  gap: 34px;
+  padding-top: 78px;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+}
+
+.teams-box{ 
+  background-image: url(../images/team_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 382px;
+  height: 432px;
+  padding-top: 33px;
+  margin-top: -58px;
+  margin-bottom: 35px;
+} 
+
+.teams-img {
+  display: inline-block;
+  margin: 4px 0 0 35px;
+  vertical-align: top;
+}
+
+.teams-fightfor {
+  display: inline-block;
+  font-size: 19px;
+  letter-spacing: 0.02em;
+  line-height: 17px;
+  text-align: left;
+  color: #fff;
+  font-family: var(--fontfamily-secondary);
+  vertical-align: top;
+  margin: 81px 0 0 23px;
+  font-weight: normal;
+}
+
+.teams-type {
+  padding-left: 189px;
+  padding-right: 40px;
+  font-size: 19px;
+  text-align: center;
+  color: #384bbe;
+  font-family: var(--fontfamily-secondary);
+  margin: -3px 0 0;
+}
+
+.teams-type strong {
+  display: block;
+  margin: 0 0 11px;
+  font-size: 26px;
+  color: #273050;
+  font-weight: normal;
+}
+
+.teams-msg {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #3c3c3c;
+  padding: 20px;
+}
+
+.footer-wrap { 
+  background-image: url(../images/footer_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 0 0 45px;
+  }
+  
+  
+
+  .footer-con {
+    display: flex;
+    padding: 55px 0 0 60px;
+    font-weight: 500;
+font-size: 28px;
+text-align: left;
+color: #3d435b;
+}
+
+.footer-intro {
+  width: 30%;
+}
+
+.footer-introtxt {
+  font-weight: normal;
+  font-size: 28px;
+  text-align: left;
+  color: #00247a;
+  padding-left: 31px;
+  padding-top: 16px;
+}
+
+.footer-introtxt strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-introtxt a{
+  color: #00247a;
+  text-decoration: none;
+}
+
+.made_withlove {
+  position: absolute;
+  right: 0;
+  top: 72px;
+}
+
+.footer-made {
+  width: 38%;
+  margin-left: 108px;
+  position: relative;
+}
+
+.footer-madetxt {
+  font-weight: normal;
+  font-size: 28px;
+  text-align: left;
+  color: #00247a;
+  padding-top: 140px;
+  position: relative;
+}
+
+.footer-madetxt p {
+  max-width: 344px;
+}
+.footer-madetxt strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  width: 100%;
+  margin: 47px 0 0;
+}
+
+.footer-link a {
+  text-decoration: underline;
+  color: #3d435b;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-poweredby {
+  width: 52%;
+  padding-left: 155px;
+  padding-top: 140px;
+}
+
+.powerby-footer-logo {
+  position: absolute;
+  right: 18px;
+  top: -35px;
+}
+
+.footer-Poweredby-box p {
+  margin-bottom: 10px;
+}
+
+.footer-Copyright {
+  margin: 51px 0 0;
+  padding-left: 6px;
+}
+
+.footer-socialmedia {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #e8e8e8;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 16px 0 2px 3px;
+  width: 100%;
+}
+
+.footer-Poweredby-box {
+  position: relative;
+}
+
+
+.landpower-box-mob{
+  display: none;
+}
+
+
+.footer-mob{display: none;}
+
+.footer-desk {
+  width: 70%;
+  display: flex;
+}
+
+/******$i$*******index css end*******$i$*********/ 
+
+
+/******$i$*******inner page start*******$i$*********/ 
+.hilb-con {
+  display: flex;
+  justify-content: space-around;
+  padding: 116px 0 0 8px;
+}
+
+.hilb-land {
+  margin: 101px 5.5% 71px 0;
+  text-align: right;
+}
+
+.fightfor-heading-02  .fightfor-heading {
+  right: 2%;
+  z-index: 1;
+}
+
+.hilb-conprog {
+  display: flex;
+  padding-left: 8%;
+  padding-bottom: 1%;
+}
+
+.hilb-rightprog {
+  padding-left: 15px;
+}
+
+.hilb-banner-con { ;
+  background-size: 100% 104%; 
+}
+
+/******$i$*******inner page end*******$i$*********/ 
+
+
+/******$i$*******HOME INDEX LAND MARKET start*******$i$*********/ 
+
+.hilm-wrap{}
+.hilm-con {
+  padding: 115px 20px 0 57px;
+  display: flex;
+} 
+.hilm-left {
+  padding-top: 44px;
+  flex-shrink: 0;
+}
+
+.hilm-right {
+  width: 77%;
+  padding: 0 25px;
+}
+
+.nftmarker-slider {
+  margin: 63px 0 0;
+}
+
+.nftmarker-detail {
+  width: 100%;
+  max-width: 490px; 
+}
+
+.nftmarker-heading {
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/nft_heading_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  font-weight: normal;
+  width: 344px;
+  height: 83px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.nftmarker-content {
+  background-image: url(../images/nft_content_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
+  width: 100%;
+  padding: 99px 21px 55px 20px;
+  margin-top: -37px;
+}
+
+.nftbtn{
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 2px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 11px;
+  text-align: center;
+  width: 180.36px;
+  height: 57.1px;
+  font-family: var(--fontfamily-secondary);
+  background-color: transparent;
+  border: none;
+  transition: all .25s ease-in-out; 
+}
+ 
+.nftbtn:hover{
+  transform: scale(1.05);
+}
+
+.nftbtn-blue {
+  background-image: url(../images/nft_btn_blue.png);
+  color: #fff;
+}
+
+.nftbtn-gray {
+  background-image: url(../images/nft_btn_gray.png);
+  color: #384bbe; 
+}
+
+.nft_price {
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/nft_price_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 187px;
+  height: 47px;
+  position: relative;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+  margin: 69px auto 44px;
+}
+
+
+.optionslct-btn{
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 2px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 11px;
+  text-align: center; 
+  font-family: var(--fontfamily-secondary);
+  background-color: transparent;
+  border: none;
+  transition: all .25s ease-in-out;  
+  color: #3d435b; 
+  margin-right: 10px;
+}
+ 
+.optionslct-btn:hover{
+  transform: scale(1.05);
+}
+
+.omarket-btn {
+  background-image: url(../images/open_market.png); color: #fff;
+  width: 178.9px;
+height: 58.2px;
+}
+
+.sales-btn {
+  background-image: url(../images/whitelist.png); color: #384bbe; 
+  width: 231.52px;
+  height: 58.2px;
+}
+
+.offer-btn {
+  background-image: url(../images/youroffer.png); color: #384bbe; 
+  width: 178.9px;
+height: 58.2px;
+}
+
+
+.hilm-btn-con {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.option_price {
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/nft_price_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 229px;
+  height: 58px;
+  position: relative;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  line-height: 58px;
+  text-align: center;
+  color: #fff;
+}
+
+.perchaseland-box{
+  background-image: url(../images/perchaseland_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%; 
+  max-width: 418.53px;
+  width: 100%;
+  height: 514.76px;
+  margin: 0 auto;
+}
+
+.perchaseland-name{
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/name_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
+  width: 63px;
+  height: 63px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.perchaseland-text{
+  font-family: var(--fontfamily-secondary);
+  font-size: 20px;
+  text-align: left;
+  color: #7b7b7b;
+  padding: 0 0 0 8px;
+  width: 59%;
+}
+
+.perchaseland-icon{
+  font-family: var(--fontfamily-secondary);
+background-image: url(../images/water_back_bg.png);
+background-repeat: no-repeat;
+background-position: top left;
+background-size: 100%;
+width: 63px;
+height: 63px;
+font-size: 20px;
+text-align: center;
+color: #fff;
+}
+
+
+.perchaseland-icon{
+  font-family: var(--fontfamily-secondary);
+background-image: url(../images/water_back_bg.png);
+background-repeat: no-repeat;
+background-position: top left;
+background-size: 100%;
+width: 63px;
+height: 63px;
+font-size: 20px;
+text-align: center;
+color: #fff;
+}
+
+.perchaseland-top {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 17px 12px;
+  align-items: center;
+}
+
+
+.perchaseland-con {
+  margin: 17px 0 0;
+}
+
+.perchaseland-icon {
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/water_back_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
+  width: 80px;
+  height: 48px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.perchaseland-pic {
+  text-align: center;
+  padding: 6px 30px;
+}
+
+.perchaseland-btm {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: #8797af;
+  padding: 12px 16px;
+}
+
+.perchaseland-btm {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: #8797af;
+}
+
+.perchaseland-logo {
+  font-family: var(--fontfamily-secondary);
+  background-image: url(../images/name_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
+  width: 63px;
+  height: 63px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.perchaseland-info {
+  width: 41%;
+  padding-left: 18px;
+}
+
+.perchaseland-info strong {
+  font-family: var(--fontfamily-secondary);
+  font-weight: normal;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.perchaseland-btnbox {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.Ownthisland-btn{
+  background-image: url(../images/ownthisland_btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: all .25s ease-in-out;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  width: 229.61px;
+  height: 59.79px;
+  font-family: var(--fontfamily-primary);
+}
+ 
+.Ownthisland-btn:hover{
+  transform: scale(1.05);
+}
+
+
+.owl-carousel-style-02 .owl-item .perchaseland-con img {
+  width: initial;
+  display: inline-block;
+}
+
+.perchaseland-iconimg img.img-resposive {
+  width: 17px !important;
+}
+
+.owl-carousel-style-02  .owl-nav {
+  width: 396px;
+  margin: 82px auto -2px;
+}
+
+
+.owl-carousel-style-02  .owl-dots {
+  text-align: center;
+  margin-top: 78px;
+  padding-bottom: 74px;
+}
+
+.owl-carousel-style-02.owl-carousel button.owl-dot{
+  background-image: url(../images/slider_dot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  width: 61px;
+  height: 61px;  
+  margin:0 13px;
+}
+
+.owl-carousel-style-02.owl-carousel button.owl-dot.active{
+  background-image: url(../images/slider_active.png); 
+}
+
+.owl-carousel-style-02.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel-style-02.owl-carousel .owl-nav button.owl-next{
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 54px;
+  height: 54px;
+}
+
+.owl-carousel-style-02owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel-style-02.owl-carousel .owl-nav button.owl-next span{
+  visibility: hidden;
+}
+
+
+.owl-carousel-style-02.owl-carousel .owl-nav button.owl-prev{
+  background-image: url(../images/arrow_left_new.png);
+  float: left;
+}
+
+.owl-carousel-style-02.owl-carousel .owl-nav button.owl-next{
+  background-image: url(../images/arrow_right_new.png);
+  float: right;
+}
+
+.pb-50{
+  padding-bottom: 50px;
+}
+
+.ownyourland-wrap-white::after {
+  content: "";
+  margin-top: 25px;
+  background: white;
+  filter: drop-shadow(5px 5px 10px rgba(166, 171, 189, 0.67)); 
+}
+
+/******$i$*******HOME INDEX LAND MARKET end*******$i$*********/ 
+
+
+@media only screen and (max-width: 1800px) {
+  .howitswork-text { 
+    background-size: 100% 100%;
+  }
+
+  .powerby-footer-logo img.img-resposive {
+    width: 100px;
+}
+
+.attributeSize-heading { 
+  font-size: 22px; 
+  line-height: 16px;
+}
+
+.landdetailRight-box { 
+  line-height: 40px;
+  padding-left: 50px; 
+}
+
+.landdetail-con { 
+  padding-bottom: 100px;
+}
+ 
+
+.fightfor-wrap { 
+  background-position: -87px -189px;
+  background-size: 112% 140%; 
+}
+
+.landelement-wrap { 
+  margin-top: 3px; 
+}
+
+.fightfor-textbox { 
+  margin-top: 0;
+  margin-left: 154px;
+  padding-bottom: 50px;
+}
+
+ 
+}
+
+@media only screen and (max-width:1499px) {
+  .ownyourland-con {  
+    flex-direction: column;
+    align-items: center;
+}
+
+.attributeSize-box { 
+  margin: 20px 15px 0;
+}
+
+.menu-con.menus-small{
+  display: none;
+}
+
+.mleft-100{
+  margin-left: 0;
+}
+
+.footer-con {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 60px;
+}
+
+.footer-intro {
+  width: 100%;
+}
+
+.footer-made {
+  width: 100%;
+  margin-left: 0; 
+}
+
+.footer-madetxt { 
+  padding-top: 10px;
+}
+
+.footer-introtxt { 
+  padding-left: 0; 
+}
+
+.footer-poweredby {
+  width: 100%;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.footer-logo img.img-resposive {
+  max-width: 200px;
+}
+
+.gameeconomics-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teams-con { 
+  padding-left: 30px; 
+}
+
+.gameeconomics-right {
+  width: 100%; 
+  padding: 50px 60px;
+}
+
+.landelement-wrap { 
+  padding:  60px;
+} 
+
+.landelement-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landelement-textheading { 
+  margin: 0 auto 50px;
+}
+
+.landelement-textbox {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+.howitswork-right { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.howitswork-left {
+  width: 100%;
+  text-align: center;
+}
+
+.howitswork-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.howitswork-detail {
+  margin: 0 auto 60px;
+}
+.col-half-box {
+  width: 50%;
+}
+
+.banner-wrap {
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.landdetail-con {
+  display: flex;
+  padding: 0 65px;
+  margin-top: 60px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landdetailRight-box {
+  line-height: 40px;
+  padding-left: 0;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fightfor-textbox {
+  margin-top: 0; 
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.fightfor-box {
+  margin: 0 60px;
+}
+
+strong.whitelisted,
+.play-btn {
+  display: none;
+}
+
+.footer-desk {
+  width: 100%; 
+}
+  
+.hilb-wrap {
+    padding: 0 20px;
+}
+
+.hilb-right,
+.hilb-left{
+  width: 50%;
+}
+
+.fightfor-heading-02 .fightfor-heading { 
+  margin-left: auto;
+}
+
+}
+ 
+
+@media only screen and (max-width: 1199px) {
+
+.header-wrap .powerlogo-box,
+.header-wrap .buy-btn,
+.header-wrap .connect-btn {
+  display: none;
+}
+
+.banner-con {
+  background-image: url(../images/mobile_banner_bg.jpg);  
+}
+
+.bg-header { 
+  background-color: #f5c579;
+}
+
+.onoff-box {
+  background-image: url(../images/onoff.png);
+  width: 87px;
+  height: 87px;
+  position: absolute;
+  left: 319px;
+  top: 3px;
+}
+
+.logo-box {
+  margin-bottom: -12px; 
+}
+
+.logo-box img {
+  width: 100%;
+  max-width: 415px;
+} 
+
+.header-mob {
+  display: flex;
+}
+
+.bg-header::after {
+  display: none;
+}
+
+.buy-btn, .play-btn, .connect-btn, .buy-btn-sm, .connect-btn-sm, .ownyourland-btn{
+  font-size: 14px;
+}
+
+.landpower-box-desk{
+  display: none;
+}
+
+.landpower-box-mob{
+  display: block;
+}
+
+.gameeconomics-left {
+  width: 100%;
+  padding: 10px 0 0;
+  margin-bottom: -130px;
+  max-width: 252px;
+}
+
+.gameeconomics-right {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.gameeconomics-heading {
+  margin: 2px 0 23px;
+}
+
+.gameeconomics-right { 
+  padding: 45px 12px 35px 12px;
+}
+
+.gameeconomics-boxhead {
+  font-size: 14px; 
+}
+
+.gameeconomics-boxhead span {
+  margin-right: 17px;
+  min-width: auto; 
+}
+
+.gameeconomics-boxhead strong {
+  font-size: 17px;
+  margin-left: 31px; 
+}
+
+.list-box {
+  margin: 9px 0 29px;
+}
+
+.ul-style-01 li {
+  background-image: url(../images/list_bg.png); 
+  background-position: top left;
+  background-size: 13px; 
+  font-size: 14px; 
+  padding-left: 18px; 
+}
+
+.gameeconomics-text { 
+  font-size: 14px;  
+  margin: 6px 0 0;
+  max-width: 100%;
+}
+
+.partners-heading {
+  font-size: 28px; 
+  padding: 20px 0 0 0;
+}
+
+.partners-box {
+  width: 142px;
+  height: 123px;
+  font-size: 22px;
+  margin: 0;
+}
+
+.partners-selection { 
+  justify-content: space-evenly;
+  margin-bottom: 47px;
+  margin-top: 20px;
+}
+
+.partners-box span { 
+  min-height: 73px;  
+}
+
+.partners-box.green-bg span img.img-resposive {
+  width: 41px;
+}
+
+.partners-box.blue-bg span img.img-resposive {
+  width: 96px;
+}
+
+.teams-con {
+  padding-left: 0;
+}
+
+.teams-box {
+  width: 286px;
+  height: 338px;
+  background-size: contain;
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+
+.teams-img {
+  display: inline-block;
+  margin: 4px 0 0 27px;
+  vertical-align: top;
+}
+
+.teams-img img.img-resposive {
+  max-width: 113px;
+}
+
+h3.teams-fightfor {
+  margin: 61px 0 0 15px;
+  font-size: 14px;
+}
+
+.teams-type {
+  font-size: 14px;
+  padding-left: 124px;
+  padding-right: 0;
+}
+
+.teams-type strong {
+  font-size: 19px;
+}
+
+.teams-msg {
+  font-size: 14px;
+  padding: 14px 30px 16px 35px;
+}
+
+.footer-logo img.img-resposive {
+  max-width: 298px;
+}
+
+.footer-con { 
+  padding: 0 0;
+}
+
+.footer-logo {
+  text-align: center;
+  margin: 0 0 2px;
+} 
+
+.footer-introtxt strong { 
+  margin-bottom: 3px;
+}
+
+.footer-introtxt {
+  font-size: 19px;
+  text-align: center;
+  padding: 13px 10px;
+  color: #000;
+  line-height: 22px;
+}
+
+.footer-introtxt a {
+    color: #000; 
+}
+
+.footer-madetxt { 
+  font-size: 16px;
+}
+
+.footer-link {  
+  font-size: 14px;
+}
+
+.footer-desk{display: none;}
+.footer-mob{display: block;}
+
+.footer-mob {
+  display: flex;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.footer-socialmedia { 
+  gap: 13px;
+}
+
+.footer-made  {
+  width: 52%;
+  margin-left: 0;
+  padding-right: 2%;
+}
+ 
+.footer-poweredby {
+  width: 48%; 
+}
+
+.footer-link { 
+  margin: -1px 0 0;
+}
+
+.footer-link a { 
+  margin-bottom: 13px;
+}
+
+.footer-Copyright {
+  margin: 25px 0 0;
+  padding-left: 0px;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+}
+
+.footer-Poweredby-box {
+  position: relative;
+  font-size: 16px;
+}
+
+.footer-Poweredby-box p {
+  margin-bottom: 5px;
+}
+
+.footer-madetxt {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.made_withlove {
+  position: absolute;
+  left: 76%;
+  top: -14px;
+}
+
+.powerby-footer-logo {
+  position: absolute;
+  left: 119px;
+  top: -23px;
+}
+
+.powerby-footer-logo img.img-resposive {
+  width: 57px;
+}
+
+.menu-btn-box { 
+  text-align: center;
+}
+
+.hilm-con { 
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+}
+
+.hilm-right {
+  width: 100%;
+  padding: 32px 25px;
+}
+
+.nftmarker-detail {
+  width: 100%;
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.hilm-btn-con { 
+  flex-direction: column;
+  gap: 20px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .buy-btn,
+  .connect-btn { 
+    width: 97px;
+    height: 33px;
+    margin-right: 0; 
+}
+ 
+.connect-btn { 
+  margin-left: 5px;
+}
+
+.powerlogo-txt strong { 
+  line-height: normal;
+  font-size: 17px;
+} 
+
+.powerlogo-txt span { 
+  font-size: 10px; 
+}
+
+.logo-box img {
+  width: 113%;
+  max-width: 418px;
+}
+
+.powerlogo-box { 
+  padding-left: 30px; 
+}
+
+.header-mob .powerlogo-box .img-resposive {
+  width: 44px;
+  max-width: 39px;
+  margin-right: 10px;
+}
+
+.header-right { 
+  padding-right: 0;
+}
+
+.slider-con {
+  padding: 24px 0px 12px; 
+}
+
+.slider-wrap {
+  padding-left: 44px;
+  padding-right: 0;
+  padding-top: 24px;
+}
+
+.tiles-box { 
+  height: 159px;
+  border-radius: 24px; 
+}
+
+.owl-carousel-style-01.owl-carousel button.owl-dot {
+  width: 15.26px;
+  height: 15.26px; 
+  margin: 0 9px;
+}
+
+.owl-carousel-style-01 .owl-dots { 
+  margin-top: 7px;
+}
+
+.banner-txt-img img.img-resposive {
+  width: 27px;
+}
+
+.banner-txt-box { 
+  font-size: 16px;  
+  max-width: 390px;
+  margin: 5px auto;
+  
+}
+
+.attributeSize-box {
+  width: 239px;
+  height: 140px;
+}
+
+.attributeSize-heading {
+  font-size: 15px;
+  line-height: 15px;
+  padding: 13px 0 0;
+}
+
+.owl-carousel-land.owl-carousel .owl-nav button.owl-prev, .owl-carousel-land.owl-carousel .owl-nav button.owl-next {
+  width: 31px;
+  height: 31px;
+}
+
+.owl-carousel-land .owl-nav { 
+  top: 15%;
+  width: 126%;
+  left: -13%;
+}
+
+.attributeslider-img img.img-resposive {
+  width: 44px;
+}
+
+.attributeslider-txt { 
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  margin-top: -8px;
+}
+
+.attributeSize-slider { 
+  max-width: 140px;
+  margin: 10px auto 0;
+
+}
+
+.landsizes-btn { 
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+}
+
+.minmax-txt {
+  font-size: 34px;
+  max-width: 187px;
+  line-height: 32px;
+}
+
+.minmax-textimg { 
+  font-size: 18px;  
+}
+
+.minmax-textimg img.img-resposive {
+  max-width: 34px;
+}
+
+.ownyourland-wrap {
+  margin-top: 15px; 
+}
+
+.attributeSize-logo { 
+  padding: 0 50px;
+  margin-bottom: -20px;
+}
+
+.landpower-txt { 
+  font-size: 20px;
+  margin: 0 0 -18px;
+  padding-left: 56px;
+}
+
+.landpower-txt strong { 
+  font-size: 30px;
+  padding: 0 5px;
+}
+
+.landpower-box {
+  width: 320px;
+  margin:12px auto 32px;
+}
+ 
+
+.landpower-proglogo-box { 
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.landpower-prog {
+  height: 37px;
+  padding: 8px 13px 13px 15px;
+  margin: 0 0 8px -10px;
+}
+
+.landpower-prog span {
+  width: 20%;
+}
+
+.ownyourland-btn { 
+  width: 238px;
+  height: 65px;
+  font-size: 24px;
+}
+
+.landdetailLeft-box {
+  width: 100%;
+  padding: 0px 13px 0 0;
+  text-align: left;
+}
+
+.landdetail-con { 
+  padding: 0 46px 90px;
+  margin-top: 35px;
+}
+
+.landdetailRight-box {
+  padding-top: 3px;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.fightfor-con {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.fightfor-wrap {
+  background-position: center bottom;
+  background-size: contain;
+  margin-top: -70px;
+}
+
+.fightfor-textheading { 
+  width: 273px;
+  height: 141px;
+  margin: 0 auto;
+  padding: 11px 56px 0 56px;
+  position: relative;
+}
+
+.fightfor-text {
+  background-image: url(../images/fightland_text_bg_mob.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 104% 103%;
+  padding: 68px 27px 39px 47px; 
+  font-size: 18px; 
+  margin-top: -62px;
+}
+
+.fightfor-textbox { 
+  padding-bottom: 0; 
+}
+
+.fightfor-box {
+  margin: 0;
+}
+
+.fightfor-heading { 
+  width: 150px;
+  height: auto;
+  margin-left: 0;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  line-height: 11px;
+  margin: 20px auto;
+}
+
+.fightfor-heading:after {  
+  width: 166px;
+  height: 70px;
+  top: -34px;
+  left: -7px;
+  z-index: -1;
+}
+
+.fightfor-topbox {
+  padding-top: 11px;
+  padding-bottom: 70px;
+}
+
+.fightfor-land {
+  margin-top: -30px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.landelement-wrap {
+  padding: 0 ;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.landelement-textheading {
+  margin: 0 auto 10px;
+  width: 202px;
+  height: 101px;
+  font-size: 24px;
+  color: #fff;
+  padding: 0 11px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: -57px;
+}
+
+.landelement-text { 
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20px; 
+}
+
+.landelement-textbox { 
+  font-size: 20px;
+  background: #e8e8e8; 
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.SupportingAgainst-con {
+  margin: 15px 0 0;
+  padding-bottom: 10px;
+}
+
+.landelement-con {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.SupportingAgainst-box span img {
+  width: 55px;
+}
+
+span.SA-text {  
+  font-size: 12px; 
+
+}
+
+.col-half-box:last-child span.SA-text {
+  min-width: 64px;
+}
+
+.landelement-left {
+  width: 100%;
+}
+
+.howitswork-wrap { 
+  padding: 20px 0 0px 0;
+}
+
+.howitswork-heading {
+  width: 290px;
+  font-size: 24px;
+  line-height: 52px;
+  height: 55px;
+  background-image: url(../images/howitswork_heading_mob.png);
+}
+
+.howitswork-text {
+  background-image: url(../images/howitswork_bg_mob.png);
+  font-size: 16px;
+  margin-top: -20px;
+  padding: 38px 27px 31px 43px;
+}
+
+.howitswork-detail {
+  margin: 0 auto 12px;
+  max-width: 344px;
+}
+
+.col-three {
+  width: 50%; 
+}
+
+.howitswork-head {
+  width: 128px;
+  font-size: 18px;
+  line-height: 16px;
+  height: 93px;
+}
+
+.howitswork-head span {
+  margin-top: 10px;
+  min-height: 65px; 
+}
+
+.howitswork-head span img.img-resposive {
+  max-height: 56px;
+  width: auto;
+}
+
+.howitswork-txt {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 17px 0 0;
+  max-width: 149px;
+  margin: 0 auto;
+}
+
+.hilb-con { 
+  flex-direction: column;
+  align-items: center;
+}
+
+.hilb-land {
+  margin: 20px 5.5% 40px 0; 
+}
+
+.hilb-conprog {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 1%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.nftmarker-heading { 
+  width: 250px;
+  height: 60px; 
+  font-size: 20px; 
+  line-height: 60px; 
+}
+
+.nftmarker-detail { 
+  max-width: 280px; 
+}
+
+.nftbtn { 
+  font-size: 14px;
+  line-height: 11px; 
+  width: 116.36px;
+  height: 38.1px; 
+}
+
+.nftmarker-content {  
+  padding: 56px 21px 10px 20px;
+  margin-top: -37px;
+}
+
+.nftmarker-slider {
+  margin: 50px ​0 ;
+}
+
+.nft_price { 
+  margin: 33px auto 45px;
+}
+
+.perchaseland-box { 
+  width: 260px;
+  height: 313.76px; 
+}
+
+.perchaseland-text { 
+  font-size: 12px; 
+  padding: 0 0 0 2px;
+  width: 59%;
+}
+
+.perchaseland-name { 
+  width: 45px;
+  height: 38px;
+  font-size: 14px; 
+}
+
+.perchaseland-icon {  
+  font-size: 14px; 
+}
+
+.perchaseland-pic { 
+  padding: 6px 45px;
+}
+
+.perchaseland-btm { 
+  font-size: 14px; 
+}
+
+.perchaseland-info strong { 
+  margin-bottom: 5px; 
+}
+
+.perchaseland-btm { 
+  align-items: flex-end;
+}
+
+.owl-carousel-style-02 .owl-dots,
+.owl-carousel-style-02 .owl-nav { 
+  display: none; 
+}
+
+}
+
+@media only screen and (max-width: 415px) {
+.logo-box img {
+  width: 100%;
+  max-width: 418px;
+}
+
+.onoff-box { 
+  left: auto; 
+  right: 8px;
+}
+
+.onoff-box { 
+  width: 58px;
+  height: 58px; 
+}
+
+.powerlogo-box {
+  padding-left: 15px;
+  margin-right: auto;
+}
+
+.header-mob {
+  display: flex;
+  justify-content: space-between;
+}
+
+}
+
+
+@media only screen and (max-width: 374px){
+.footer-mob { 
+    flex-direction: column;
+}
+
+.footer-made,
+.footer-poweredby,
+.col-half-box  {
+  width: 100%;
+}  
+
+.SupportingAgainst-box { 
+  justify-content: center;
+}
+ 
+
+.SupportingAgainst-con { 
+  flex-direction: column;
+}
+.powerlogo-box {
+  padding-left: 3px; 
+}
+}
